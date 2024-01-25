@@ -1,0 +1,61 @@
+/* [vnikolin] Creating a switch knob style */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* hide the vanilla checkbox, retain usage */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #8596af;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    border-radius: 34px;
+    content: "";
+    height: 30px;
+    width: 30px;
+    right: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+/* define animation */
+.inputNode:checked+.slider:before {
+    transform: translate(-26px);
+}
+
+/* visual aid with color */
+.inputNode:checked+.slider {
+    background-color: #0068f5;
+}
+
+.labeled-switch {
+    /* display: flex; */
+    display: block;
+}
+
+.text {
+    /* display: block; */
+    font-size: small;
+    margin-top: 4px;
+    margin-right: 10px;
+}
