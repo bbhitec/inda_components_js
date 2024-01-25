@@ -1,11 +1,6 @@
 import "./Switch.css"
 
 
-// define props for an optional label (if the switch is a non-trivial on/off)
-// interface SwitchProps {
-//     labelText?: string;
-// }
-
 const Switch = (props) => {
     const { labelText } = props;
     return (

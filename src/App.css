@@ -1,18 +1,25 @@
-
 .app {
   display: flex;
   flex-direction: column;
   place-items: center;
   justify-content: center;
   min-width: 240px;
-  /* min-height: 100vh; */
   align-items: center;
-  width: 50%;
+  width: 60%;
   height: 50%;
   margin: auto;
-  margin-top: 7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 3rem;
   box-shadow: rgba(20, 20, 20, 0.2) 1px 2px 10px;
   border-radius: 2rem;
   background-color: white;
+}
+
+/* Responsive Media Quieries*/
+/* For medium devices */
+@media screen and (max-width: 568px) {
+  .app {
+    width: 70%;
+  }
 }

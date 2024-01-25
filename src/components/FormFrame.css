@@ -1,41 +1,41 @@
 .main-form {
     display: flex;
     flex-direction: column;
-    /* width: 50%; */
+    width: 65%;
     background-color: white;
     color: #0c3058;
 }
 
-h1 {
-    padding-bottom: 2px;
+.form-header {
+    margin-bottom: 5px;
 }
 
+.form-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
 
+.infobox {
+    display: flex;
+    padding: 1px 9px;
+    border: solid 1px #7bb0ff;
+    border-radius: 5px;
+    align-items: center;
+    gap: 6px;
+    background-color: #ebf3ff;
+}
 
-.input-area {
+.infobox p {
+    font-size: smaller;
+}
+
+.form-main-area {
     margin-top: 30px;
     margin-bottom: 20px;
-    columns: 2 250px;
-    column-gap: 10px;
+    columns: 2 230px;
+    column-gap: 30px;
 }
 
-/* .input-field {
-    padding-bottom: 4px;
-    margin-bottom: 8px;
-} */
-
-/* className="border-2 border-gray-500 p-2 rounded-md w-1/2 focus:border-teal-500 focus:ring-teal-500 " */
-input {
-    padding: 1rem;
-    margin: 10px 0px;
-    border: solid 1px;
-    border-radius: 9px;
-    border-color: #0c3058;
-    font-family: 'Rubik', sans-serif;
-    /* width: 100%; */
-}
-
-/* className="border-2 border-gray-500 p-2 rounded-md w-1/2 focus:border-teal-500 focus:ring-teal-500" */
 select {
     padding: 1rem;
     margin: 10px 0px;
@@ -46,7 +46,6 @@ select {
 }
 
 button {
-    /* className="bg-teal-500 font-latoBold text-sm text-white py-3 mt-6 rounded-lg w-full" */
     background-color: #0068f5;
     padding: 1rem;
     margin: 10px 0px;
@@ -58,15 +57,55 @@ button {
     color: white;
 }
 
-/* className="flex items-center gap-2" */
 .tos-area {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
+.tos-area p {
+    font-size: medium;
+}
+
 .tos-border {
     border-top: dotted #0068f5 1px;
     margin-top: 10px;
     padding-top: 15px;
+}
+
+/* Responsive Media Quieries*/
+/* For medium devices */
+@media screen and (max-width: 568px) {
+    .form-header {
+        margin-bottom: 0;
+    }
+
+    button {
+        background-color: #0068f5;
+        padding: 0.65rem;
+        margin: 4px 0px;
+        width: 100%;
+        font-size: medium;
+    }
+
+    .form-footer p {
+        margin-top: 0px;
+        font-size: smaller;
+    }
+
+    .tos-area p {
+        font-size: small;
+    }
+
+    .form-main-area {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main-form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
 }

@@ -3,24 +3,6 @@ import React, { useState } from 'react'
 import "./FormInput.css"
 
 
-// interface FormInputProps {
-//     id: number,
-//     name: string,
-//     type: string,
-//     placeholder?: string,
-//     errorMessage?: string,
-//     label: string,
-//     pattern?: string,
-//     required?: boolean
-
-//     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-//     onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
-//     value: string;
-//     // ...inputProps: any;
-// }
-// const { label, errorMessage, onChange, id, ...inputProps } = props;
-
-
 const FormInput = (props) => {
 
     // using a focused state to arbitrate input validations
@@ -32,7 +14,7 @@ const FormInput = (props) => {
     };
 
     return (
-        <div>
+        <div class="form-input">
             <label className='form-label'>{label}</label>
             <input
                 {...props}
@@ -43,7 +25,7 @@ const FormInput = (props) => {
                 }
                 focused={focused.toString()}
             />
-            <span>{errorMessage}</span>
+            <span className='error-label'>{errorMessage}</span>
         </div>
     )
 }
