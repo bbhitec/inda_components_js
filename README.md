@@ -1,8 +1,19 @@
-# React + Vite
+# React Forms Modules
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
+Building a responsive and self-checking forms. Hebrew version. Derived from various projects
 
-Currently, two official plugins are available:
+[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> (Hobbit lifestyles)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Gains
+- Best practices for responsive design
+- React compoments work and styling
+- Wireframe based web design
+
+### Skills stack
+![](https://shields.io/badge/-react-4377cb?logo=react)
+![](https://shields.io/badge/-node-4377cb?logo=node.js)
+![](https://shields.io/badge/-vite-000000?logo=vite)
+
+## Usage/How to run
+Pull `npm install` and `npm run dev`
