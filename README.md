@@ -1,9 +1,6 @@
 # React Forms Modules
 
-## About
 Building a responsive and self-checking forms. Hebrew version. Derived from various projects
-
-[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> (Hobbit lifestyles)
 
 ## Gains
 - Best practices for responsive design
